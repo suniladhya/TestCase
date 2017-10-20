@@ -6,8 +6,8 @@
     <ProjectGuid>{2DA51380-8097-40C4-B4E7-B2B1473E48D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UTProject</RootNamespace>
-    <AssemblyName>UTProject</AssemblyName>
+    <RootNamespace>CalculatorTests</RootNamespace>
+    <AssemblyName>CalculatorTests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AdditionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp\CalculatorConsoleApp.csproj">
+      <Project>{70f1ef2c-1e4c-4280-acf4-625a0a95fbd8}</Project>
+      <Name>CalculatorConsoleApp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
